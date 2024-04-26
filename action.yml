@@ -142,7 +142,7 @@ runs:
       id: phpunit_run
       run: |
         set -e
-        bash <(curl -s https://raw.githubusercontent.com/westy92/php-build/3a1ae6c73ce245cdddc6e8634a046fe41209e082/php-build.bash) phpunit
+        bash <(curl -s https://raw.githubusercontent.com/westy92/php-build/update-php-versions/php-build.bash) phpunit
         ${{ github.action_path }}/phpunit-action.bash
       shell: bash
 
